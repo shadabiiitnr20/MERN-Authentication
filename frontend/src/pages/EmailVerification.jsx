@@ -48,7 +48,7 @@ const EmailVerification = () => {
       navigate('/');
       toast.success('Email Verified Successfully');
     } catch (error) {
-      console.log(error);
+      //Fail Silently
     }
   };
 

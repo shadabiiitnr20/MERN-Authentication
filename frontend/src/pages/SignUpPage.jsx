@@ -21,7 +21,7 @@ const SignUpPage = () => {
       await signUp(email, password, name);
       navigate('/verify-email');
     } catch (error) {
-      console.log(error);
+      //Fail Silently
     }
   };
 
