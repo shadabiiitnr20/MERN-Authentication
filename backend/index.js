@@ -30,7 +30,7 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.listen(PORT, () => {
-  connectDB();
+app.listen(PORT, async () => {
+  await connectDB();
   console.log(`Server started on PORT : ${PORT}`);
 });
